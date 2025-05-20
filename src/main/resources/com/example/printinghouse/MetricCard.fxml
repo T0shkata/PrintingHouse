@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.printinghouse.ui.MetricCardController"
+      spacing="4" style="-fx-padding: 8;" styleClass="metric-card">
+
+    <Label fx:id="titleLabel" text="Title" styleClass="metric-title"/>
+    <Label fx:id="valueLabel" text="0" styleClass="metric-value"/>
+</VBox>

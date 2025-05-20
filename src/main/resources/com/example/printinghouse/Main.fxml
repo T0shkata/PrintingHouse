@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.printinghouse.ui.MainController"
+            stylesheets="@main.css">
+
+    <!-- Top navbar fills entire width -->
+    <top>
+        <HBox fx:id="navBar"
+              spacing="6"
+              styleClass="navbar">
+            <children>
+                <Button text="Dashboard"    onAction="#onNavClick" id="Dashboard"
+                        HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                <Button text="Publications" onAction="#onNavClick" id="Publications"
+                        HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                <Button text="Printers"     onAction="#onNavClick" id="Printers"
+                        HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                <Button text="Employees"    onAction="#onNavClick" id="Employees"
+                        HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                <Button text="Financials"   onAction="#onNavClick" id="Financials"
+                        HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                <Button text="Reports"      onAction="#onNavClick" id="Reports"
+                        HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+                <Button text="Settings"     onAction="#onNavClick" id="Settings"
+                        HBox.hgrow="ALWAYS" maxWidth="Infinity"/>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area"/>
+    </center>
+</BorderPane>

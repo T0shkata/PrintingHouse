@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Alice Johnson",
+    "Position": "Manager",
+    "Salary": 2500
+  },
+  {
+    "Name": "Bob Thompson",
+    "Position": "Printer Operator",
+    "Salary": 2500
+  },
+  {
+    "Name": "Carol Martinez",
+    "Position": "Printer Operator",
+    "Salary": 2500
+  },
+  {
+    "Name": "David Lee",
+    "Position": "Manager",
+    "Salary": 2500
+  },
+  {
+    "Name": "Eva Fernandez",
+    "Position": "Printer Operator",
+    "Salary": 25000
+  }
+]
