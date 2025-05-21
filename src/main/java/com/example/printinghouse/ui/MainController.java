@@ -19,7 +19,7 @@ public class MainController implements Initializable
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-        loadView("Dashboard.fxml");  // show Dashboard by default
+        loadView("Publications.fxml");  // show Dashboard by default
     }
 
     @FXML

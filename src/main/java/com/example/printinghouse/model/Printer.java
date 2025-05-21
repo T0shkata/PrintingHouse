@@ -4,23 +4,39 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Printer {
 
-    @JsonProperty("Id")
-    private int Id;
-
-    @JsonProperty("Type")
-    private String Type;
-
-    @JsonProperty("PagesPrinted")
-    private int PagesPrinted;
+    private int id;
+    private String type;
+    private int pagesPrinted;
 
     public Printer() {}
 
-    public int getId() { return Id; }
-    public void setId(int Id) { this.Id = Id; }
+    @JsonProperty("Id")
+    public int getId() {
+        return id;
+    }
 
-    public String getType() { return Type; }
-    public void setType(String Type) { this.Type = Type; }
+    @JsonProperty("Id")
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    public int getPagesPrinted() { return PagesPrinted; }
-    public void setPagesPrinted(int PagesPrinted) { this.PagesPrinted = PagesPrinted; }
+    @JsonProperty("Type")
+    public String getType() {
+        return type;
+    }
+
+    @JsonProperty("Type")
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @JsonProperty("PagesPrinted")
+    public int getPagesPrinted() {
+        return pagesPrinted;
+    }
+
+    @JsonProperty("PagesPrinted")
+    public void setPagesPrinted(int pagesPrinted) {
+        this.pagesPrinted = pagesPrinted;
+    }
 }

@@ -4,23 +4,39 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Employee {
 
-    @JsonProperty("Name")
-    private String Name;
-
-    @JsonProperty("Position")
-    private String Position;
-
-    @JsonProperty("Salary")
-    private double Salary;
+    private String name;
+    private String position;
+    private double salary;
 
     public Employee() {}
 
-    public String getName() { return Name; }
-    public void setName(String Name) { this.Name = Name; }
+    @JsonProperty("Name")
+    public String getName() {
+        return name;
+    }
 
-    public String getPosition() { return Position; }
-    public void setPosition(String Position) { this.Position = Position; }
+    @JsonProperty("Name")
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public double getSalary() { return Salary; }
-    public void setSalary(double Salary) { this.Salary = Salary; }
+    @JsonProperty("Position")
+    public String getPosition() {
+        return position;
+    }
+
+    @JsonProperty("Position")
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    @JsonProperty("Salary")
+    public double getSalary() {
+        return salary;
+    }
+
+    @JsonProperty("Salary")
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
 }

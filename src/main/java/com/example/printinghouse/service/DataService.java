@@ -7,4 +7,5 @@ public interface DataService {
     List<Publication> getAllPublications();
     List<Printer>     getAllPrinters();
     List<Employee>    getAllEmployees();
+    void addPublication(Publication publication);
 }

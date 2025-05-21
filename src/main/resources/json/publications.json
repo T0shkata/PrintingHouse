@@ -1,37 +1,50 @@
-[
-  {
-    "ID": 1,
-    "Publication": "Book",
-    "PageCount": 200,
-    "PageFormat": "A4",
-    "PaperType": "normal"
-  },
-  {
-    "ID": 2,
-    "Publication": "Newspaper",
-    "PageCount": 32,
-    "PageFormat": "A3",
-    "PaperType": "normal"
-  },
-  {
-    "ID": 3,
-    "Publication": "Poster",
-    "PageCount": 1,
-    "PageFormat": "A1",
-    "PaperType": "glossy"
-  },
-  {
-    "ID": 4,
-    "Publication": "Book",
-    "PageCount": 120,
-    "PageFormat": "A5",
-    "PaperType": "glossy"
-  },
-  {
-    "ID": 5,
-    "Publication": "Newspaper",
-    "PageCount": 24,
-    "PageFormat": "A2",
-    "PaperType": "normal"
-  }
-]
+[ {
+  "Amount" : 10,
+  "Publication" : "Book",
+  "PageCount" : 200,
+  "PageFormat" : "A4",
+  "PaperType" : "normal",
+  "Printer" : "3"
+}, {
+  "Amount" : 100,
+  "Publication" : "Newspaper",
+  "PageCount" : 32,
+  "PageFormat" : "A3",
+  "PaperType" : "normal",
+  "Printer" : "5"
+}, {
+  "Amount" : 5,
+  "Publication" : "Poster",
+  "PageCount" : 1,
+  "PageFormat" : "A1",
+  "PaperType" : "glossy",
+  "Printer" : "4"
+}, {
+  "Amount" : 12,
+  "Publication" : "Book",
+  "PageCount" : 120,
+  "PageFormat" : "A5",
+  "PaperType" : "glossy",
+  "Printer" : "2"
+}, {
+  "Amount" : 60,
+  "Publication" : "Newspaper",
+  "PageCount" : 24,
+  "PageFormat" : "A2",
+  "PaperType" : "normal",
+  "Printer" : "1"
+}, {
+  "Amount" : 20,
+  "Publication" : "Book",
+  "PageCount" : 289,
+  "PageFormat" : "A5",
+  "PaperType" : "normal",
+  "Printer" : "5"
+}, {
+  "Amount" : 1000,
+  "Publication" : "Newspaper",
+  "PageCount" : 10,
+  "PageFormat" : "A2",
+  "PaperType" : "normal",
+  "Printer" : "5"
+} ]

@@ -6,7 +6,6 @@ import com.example.printinghouse.service.DataService;
 import com.example.printinghouse.service.JsonDataService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -18,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-public class DashboardController implements Initializable
+public class PublicationsController implements Initializable
 {
 
     @FXML private GridPane gridPane;

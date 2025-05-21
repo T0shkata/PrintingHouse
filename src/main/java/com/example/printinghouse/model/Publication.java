@@ -4,35 +4,72 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Publication {
 
-    @JsonProperty("ID")
-    private int ID;
-
-    @JsonProperty("Publication")
-    private String Publication;
-
-    @JsonProperty("PageCount")
-    private int PageCount;
-
-    @JsonProperty("PageFormat")
-    private String PageFormat;
-
-    @JsonProperty("PaperType")
-    private String PaperType;
+    private int amount;
+    private String publication;
+    private int pageCount;
+    private String pageFormat;
+    private String paperType;
+    private String printer;
 
     public Publication() {}
 
-    public int getID() { return ID; }
-    public void setID(int ID) { this.ID = ID; }
+    @JsonProperty("Amount")
+    public int getAmount() {
+        return amount;
+    }
 
-    public String getPublication() { return Publication; }
-    public void setPublication(String Publication) { this.Publication = Publication; }
+    @JsonProperty("Amount")
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
 
-    public int getPageCount() { return PageCount; }
-    public void setPageCount(int PageCount) { this.PageCount = PageCount; }
+    @JsonProperty("Publication")
+    public String getPublication() {
+        return publication;
+    }
 
-    public String getPageFormat() { return PageFormat; }
-    public void setPageFormat(String PageFormat) { this.PageFormat = PageFormat; }
+    @JsonProperty("Publication")
+    public void setPublication(String publication) {
+        this.publication = publication;
+    }
 
-    public String getPaperType() { return PaperType; }
-    public void setPaperType(String PaperType) { this.PaperType = PaperType; }
+    @JsonProperty("PageCount")
+    public int getPageCount() {
+        return pageCount;
+    }
+
+    @JsonProperty("PageCount")
+    public void setPageCount(int pageCount) {
+        this.pageCount = pageCount;
+    }
+
+    @JsonProperty("PageFormat")
+    public String getPageFormat() {
+        return pageFormat;
+    }
+
+    @JsonProperty("PageFormat")
+    public void setPageFormat(String pageFormat) {
+        this.pageFormat = pageFormat;
+    }
+
+    @JsonProperty("PaperType")
+    public String getPaperType() {
+        return paperType;
+    }
+
+    @JsonProperty("PaperType")
+    public void setPaperType(String paperType) {
+        this.paperType = paperType;
+    }
+
+    @JsonProperty("Printer")
+    public String getPrinter() {
+        return printer;
+    }
+
+    @JsonProperty("Printer")
+    public void setPrinter(String printer) {
+        this.printer = printer;
+    }
 }
