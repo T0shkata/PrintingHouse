@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane fx:controller="com.example.printinghouse.ui.PrintersController"
+          xmlns:fx="http://javafx.com/fxml"
+          hgap="20" vgap="20"
+          style="-fx-background-color: #999999;">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="70"/>
+        <ColumnConstraints percentWidth="30"/>
+    </columnConstraints>
+
+    <!-- Printer Cards Column -->
+    <ScrollPane fitToWidth="true" GridPane.columnIndex="0">
+        <VBox fx:id="printerCardsBox" spacing="12" />
+    </ScrollPane>
+
+    <!-- Paper Info Column -->
+    <VBox spacing="10" GridPane.columnIndex="1">
+        <Label text="Налична хартия:" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <GridPane hgap="10" vgap="5">
+            <!-- Заглавия -->
+            <Label text="Normal" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label text="Glossy" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Newspaper" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+            <!-- A1 -->
+            <TextField fx:id="normalA1" editable="false" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="glossyA1" editable="false" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextField fx:id="newspaperA1" editable="false" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+            <!-- A2 -->
+            <TextField fx:id="normalA2" editable="false" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="glossyA2" editable="false" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <TextField fx:id="newspaperA2" editable="false" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+            <!-- A3 -->
+            <TextField fx:id="normalA3" editable="false" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="glossyA3" editable="false" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <TextField fx:id="newspaperA3" editable="false" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+
+            <!-- A4 -->
+            <TextField fx:id="normalA4" editable="false" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="glossyA4" editable="false" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+            <TextField fx:id="newspaperA4" editable="false" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+
+            <!-- A5 -->
+            <TextField fx:id="normalA5" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="glossyA5" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+            <TextField fx:id="newspaperA5" editable="false" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+        </GridPane>
+    </VBox>
+
+</GridPane>

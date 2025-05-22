@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.printinghouse.ui.EmployeesController"
+            fitToWidth="true">
+    <VBox fx:id="employeeList"
+          spacing="10"
+          padding="20"
+          style="-fx-background-color: #f0f0f0;">
+    </VBox>
+</ScrollPane>
