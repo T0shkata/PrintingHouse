@@ -64,6 +64,16 @@
             </items>
         </ComboBox>
 
+        <Label text="Colour" style="-fx-font-size: 14px;" fx:id="colourLabel" visible="false"/>
+        <ComboBox fx:id="colourBox" maxWidth="Infinity" visible="false">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="true"/>
+                    <String fx:value="false"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+
         <Label text="Page Count" style="-fx-font-size: 14px;" fx:id="pagesLabel" visible="false"/>
         <TextField fx:id="pagesField" maxWidth="Infinity" visible="false"/>
 

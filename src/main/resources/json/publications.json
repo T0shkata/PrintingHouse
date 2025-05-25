@@ -82,4 +82,39 @@
   "PageFormat" : "A3",
   "PaperType" : "normal",
   "Printer" : "3"
+}, {
+  "Amount" : 4,
+  "Publication" : "Newspaper",
+  "PageCount" : 100,
+  "PageFormat" : "A2",
+  "PaperType" : "normal",
+  "Printer" : "Printer #4"
+}, {
+  "Amount" : 10,
+  "Publication" : "Newspaper",
+  "PageCount" : 7,
+  "PageFormat" : "A3",
+  "PaperType" : "normal",
+  "Printer" : "Printer #1"
+}, {
+  "Amount" : 7,
+  "Publication" : "Newspaper",
+  "PageCount" : 10,
+  "PageFormat" : "A2",
+  "PaperType" : "normal",
+  "Printer" : "Printer #1"
+}, {
+  "Amount" : 3,
+  "Publication" : "Newspaper",
+  "PageCount" : 4,
+  "PageFormat" : "A1",
+  "PaperType" : "normal",
+  "Printer" : "Printer #4"
+}, {
+  "Amount" : 14,
+  "Publication" : "Newspaper",
+  "PageCount" : 14,
+  "PageFormat" : "A1",
+  "PaperType" : "normal",
+  "Printer" : "Printer #1"
 } ]

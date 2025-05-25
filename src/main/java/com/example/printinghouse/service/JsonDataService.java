@@ -10,6 +10,7 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class JsonDataService implements DataService
 {
@@ -54,6 +55,40 @@ public class JsonDataService implements DataService
         }
     }
 
+    public void updatePrinterWithPublication(Publication pub)
+    {
+        List<Printer> printers = getAllPrinters();
+
+        for (Printer printer : printers) {
+            if (String.valueOf(printer.getId()).equals(pub.getPrinter())) {
+                int printedPages = pub.getAmount() * pub.getPageCount();
+                printer.setPagesPrinted(printer.getPagesPrinted() + printedPages);
+
+                String title = pub.getPublication();
+                boolean found = false;
+
+                for (PrintedPublication pp : printer.getPrintedPublications()) {
+                    if (pp.getTitle().equalsIgnoreCase(title)) {
+                        pp.setCopies(pp.getCopies() + pub.getAmount());
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (!found) {
+                    PrintedPublication newEntry = new PrintedPublication();
+                    newEntry.setTitle(title);
+                    newEntry.setCopies(pub.getAmount());
+                    printer.getPrintedPublications().add(newEntry);
+                }
+
+                break; // found the printer, no need to continue
+            }
+        }
+
+        writeList("printers.json", printers);
+    }
+
     private <T> List<T> readList(String filename, Class<T[]> clazz)
     {
         try (InputStream in = getClass().getResourceAsStream(basePath + "/" + filename))
@@ -68,7 +103,7 @@ public class JsonDataService implements DataService
     }
 
     private <T> void writeList(String relativePath, List<T> list) {
-        try (Writer writer = new FileWriter("src/main/resources/" + basePath + "/" + relativePath))
+        try (Writer writer = new FileWriter("src/main/resource/" + basePath + "/" + relativePath))
         {
             mapper.writerWithDefaultPrettyPrinter().writeValue(writer, list);
             System.out.println("✔ Successfully wrote to: " + relativePath);
@@ -76,5 +111,4 @@ public class JsonDataService implements DataService
             throw new RuntimeException("Failed to write JSON to " + relativePath, e);
         }
     }
-
 }

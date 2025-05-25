@@ -7,9 +7,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MainApplication extends Application {
+public class MainApplication extends Application
+{
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) throws Exception
+    {
         FXMLLoader loader = new FXMLLoader(
                 getClass().getResource("/com/example/printinghouse/Main.fxml"));
         Scene scene = new Scene(loader.load(), 1200, 800);

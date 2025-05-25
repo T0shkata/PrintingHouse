@@ -8,4 +8,5 @@ public interface DataService {
     List<Printer>     getAllPrinters();
     List<Employee>    getAllEmployees();
     void addPublication(Publication publication);
+    void updatePrinterWithPublication(Publication pub);
 }

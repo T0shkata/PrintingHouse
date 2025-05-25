@@ -1,72 +1,64 @@
-[
-  {
-    "Id": 1,
-    "Type": "Color",
-    "PagesPrinted": 98000,
-    "PagesPerMinute": 30,
-    "PaperCapacity": 5000,
-    "PrintedPublications": [
-      {
-        "Title": "Newspaper",
-        "Copies": 14000
-      }
-    ],
-    "PapersCount": 5000
-  },
-  {
-    "Id": 2,
-    "Type": "Black & White",
-    "PagesPrinted": 80000,
-    "PagesPerMinute": 25,
-    "PaperCapacity": 4000,
-    "PrintedPublications": [
-      {
-        "Title": "Book",
-        "Copies": 200
-      }
-    ],
-    "PapersCount": 4000
-  },
-  {
-    "Id": 3,
-    "Type": "Color",
-    "PagesPrinted": 21400,
-    "PagesPerMinute": 28,
-    "PaperCapacity": 4500,
-    "PrintedPublications": [
-      {
-        "Title": "Newspaper",
-        "Copies": 2200
-      }
-    ],
-    "PapersCount": 4500
-  },
-  {
-    "Id": 4,
-    "Type": "Black & White",
-    "PagesPrinted": 10,
-    "PagesPerMinute": 22,
-    "PaperCapacity": 3500,
-    "PrintedPublications": [
-      {
-        "Title": "Poster",
-        "Copies": 10
-      }
-    ],
-    "PapersCount": 3500
-  },
-  {
-    "Id": 5,
-    "Type": "Color",
-    "PagesPrinted": 2200,
-    "PagesPerMinute": 20,
-    "PaperCapacity": 3000,
-    "PrintedPublications": [
-      {
-        "Title": "Newspaper",
-        "Copies": 300
-      }
-    ],
-    "PapersCount": 3000
-  }
-]
+[ {
+  "type" : true,
+  "Id" : 1,
+  "Colour" : true,
+  "PagesPrinted" : 99000,
+  "PagesPerMinute" : 30,
+  "PaperCapacity" : 5000,
+  "PapersCount" : 4000,
+  "PrintedPublications" : [ {
+    "Title" : "Newspaper",
+    "Copies" : 14001
+  } ]
+}, {
+  "type" : true,
+  "Id" : 2,
+  "Colour" : true,
+  "PagesPrinted" : 80024,
+  "PagesPerMinute" : 25,
+  "PaperCapacity" : 4000,
+  "PapersCount" : 3976,
+  "PrintedPublications" : [ {
+    "Title" : "Book",
+    "Copies" : 200
+  }, {
+    "Title" : "Newspaper",
+    "Copies" : 6
+  } ]
+}, {
+  "type" : true,
+  "Id" : 3,
+  "Colour" : true,
+  "PagesPrinted" : 21400,
+  "PagesPerMinute" : 28,
+  "PaperCapacity" : 4500,
+  "PapersCount" : 4500,
+  "PrintedPublications" : [ {
+    "Title" : "Newspaper",
+    "Copies" : 2200
+  } ]
+}, {
+  "type" : false,
+  "Id" : 4,
+  "Colour" : false,
+  "PagesPrinted" : 10,
+  "PagesPerMinute" : 22,
+  "PaperCapacity" : 3500,
+  "PapersCount" : 3500,
+  "PrintedPublications" : [ {
+    "Title" : "Poster",
+    "Copies" : 10
+  } ]
+}, {
+  "type" : false,
+  "Id" : 5,
+  "Colour" : false,
+  "PagesPrinted" : 2200,
+  "PagesPerMinute" : 20,
+  "PaperCapacity" : 3000,
+  "PapersCount" : 3000,
+  "PrintedPublications" : [ {
+    "Title" : "Newspaper",
+    "Copies" : 300
+  } ]
+} ]
