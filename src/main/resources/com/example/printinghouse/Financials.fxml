@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.printinghouse.ui.FinancialsController"
+          prefWidth="1200" prefHeight="800">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints percentHeight="80"/>
+        <RowConstraints percentHeight="20"/>
+    </rowConstraints>
+
+    <ScrollPane GridPane.rowIndex="0" fitToWidth="true" fitToHeight="true">
+        <content>
+            <VBox fx:id="orderList"
+                  spacing="12"
+                  style="-fx-background-color: #f4f4f4;"/>
+        </content>
+    </ScrollPane>
+
+    <!-- Bottom Row: Pay Salaries + Summary -->
+    <HBox GridPane.rowIndex="1"
+          spacing="20"
+          alignment="CENTER_LEFT"
+          style="-fx-background-color: #e6e6e6;">
+
+        <Button fx:id="paySalariesBtn"
+                text="Pay Salaries"
+                onAction="#onPaySalaries"/>
+
+        <VBox fx:id="salaryCard"
+              spacing="5"
+              style="-fx-background-color: white; -fx-padding: 10; -fx-border-radius: 8; -fx-background-radius: 8;"
+              visible="false" />
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <VBox spacing="6">
+            <Label text="Income:"/>
+            <Label fx:id="incomeLabel"/>
+        </VBox>
+
+        <VBox spacing="6">
+            <Label text="Expenses:"/>
+            <Label fx:id="expensesLabel"/>
+        </VBox>
+
+        <VBox spacing="6">
+            <Label text="Profit:"/>
+            <Label fx:id="profitLabel"/>
+        </VBox>
+
+    </HBox>
+</GridPane>
